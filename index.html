@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <head>
+  
+  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="utf-8" />
@@ -13,7 +15,19 @@
       integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB"
       crossorigin="anonymous"
     />
-
+    
+        <!-- The loading of geogebra is deferred to speed up page rendering -->
+    
+    <title>Single applet + API</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.geogebra.org/apps/deployggb.js"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    
+    
     <!-- The loading of KaTeX is deferred to speed up page rendering -->
     <script
       defer
@@ -44,13 +58,19 @@
                       ]
         });'
     ></script>
+  
+  </head>
 
-</head>
+  
+  <body>
     
-<body>
-
+    
 <h1>Ficha de Avaliação </h1>
-<span style="font-size: 16px;">
+
+    Deves responder a está ficha <a href="https://forms.office.com/r/YaVk7zVuRm" target="_blank" rel="nofollow">aqui</a>.
+    
+    
+<p style="margin-left: 20px;"><span style="font-size: 16px;">
 <ol>
   <li>Considere, num referencial o.n. $Oxyz$, um paralelepípedo retângulo $ [BCDEFGH]$ de bases $[ABCD]$
 e $[FGHE]$ , sendo  $[AF]$ , $[BG]$ , $[CH]$ e $[DE]$ as arestas laterais deste paralelepípedo.
@@ -59,9 +79,9 @@ Na base $[ABCD]$ , o vértice $A$ pertence ao semieixo positivo $Ox$, o vértice
 positivo $Oy$, os vértices $C$ e $D$ têm cota positiva, e o segmento de reta $[BD]$ é uma diagonal. </br>    </br>   
 Sabe-se ainda que:</li>
   
-<p style="margin-left: 40px;">$E (7, 2,15)$ e $G(6,10,13)$
+<p style="margin-left: 40px;">•$E (7, 2,15)$ e $G(6,10,13)$
 </p>   
-<p style="margin-left: 40px;">a reta $EF$ é definida pela equação $(x,y,z)=(1,-2,19)+k(-3,-2,2), k \in \R$
+<p style="margin-left: 40px;">•a reta $EF$ é definida pela equação $(x,y,z)=(1,-2,19)+k(-3,-2,2), k \in \R$
 </p>
 Qual da equaçoes seguintes define uma reta perpendicular à reta $EF$ e que passa no ponto $E$?
 
@@ -74,7 +94,7 @@ Qual da equaçoes seguintes define uma reta perpendicular à reta $EF$ e que pas
   <li>Numa escola frequentada por estudantes portugueses e estrangeiros, $60\%$ dos alunos são raparigas e
 $15\%$ são rapazes estrangeiros.
 Escolheu-se, ao acaso, um aluno dessa escola e verificou-se que era um rapaz.
-Qual é a probabilidade de ele ser português?</li>
+ </br> </br>Qual é a probabilidade de ele ser português?</li>
 
 <p style="margin-left: 40px;">
   <strong>(A)</strong> $45\%$ 
@@ -84,8 +104,8 @@ Qual é a probabilidade de ele ser português?</li>
 </p>   
 
 <li>Seja $(v_n)$ uma progressão geométrica.
-Sabe-se que $v_5=4$ e que $v_8=108$
-Qual é o valor de $v_6$?
+ </br>Sabe-se que $v_5=4$ e que $v_8=108$
+ </br> </br>Qual é o valor de $v_6$?
 </li>
 <p style="margin-left: 40px;">
   <strong>(A)</strong> $12$ 
@@ -98,9 +118,8 @@ Qual é o valor de $v_6$?
 <li>Em $\C$, conjunto dos números complexos, considere $z_1=2 e^{i \frac{\pi}{4}}$ e $z_2=2 e^{i \frac{3\pi}{28}}$
  Seja $w$ o número complexo tal que $w=\frac{z_1}{z_2}$
   
-  Sabe-se que, no plano complexo, o afixo do número complexo $w$ é um dos vértices de um polígono
-regular com centro na origem do referencial e com outro vértice sobre o semieixo real positivo.
-Qual é o número mínimo de vértices desse polígono?
+  Sabe-se que, no plano complexo, o afixo do número complexo $w$ é um dos vértices de um polígono regular com centro na origem do referencial e com outro vértice sobre o semieixo real positivo.
+  </br></br>Qual é o número mínimo de vértices desse polígono?
 </li>
 <p style="margin-left: 40px;">
   <strong>(A)</strong> $7$ 
@@ -111,10 +130,9 @@ Qual é o número mínimo de vértices desse polígono?
 
 
 <li>Considere, num referencial o.n. $Oxyz$, um trapézio $[PQRS]$ , de bases $[PQ]$ e $[RS]$ , em que o lado $[PS]$ é perpendicular às bases.
-  Tem-se $P(1,-1,2)$, $Q(-2,1,1)$ e $R(-5,5,-3)$
+  Tem-se $P(1,-1,2)$, $Q(-2,1,1)$ e $R(-5,5,-3)$. </br> </br>
   
-  Qual das condições seguintes define a superfície esférica de centro no ponto $R$ e que passa no
-ponto $Q$?
+  Qual das condições seguintes define a superfície esférica de centro no ponto $R$ e que passa no ponto $Q$?
 </li>
 <p style="margin-left: 40px;">
   <strong>(A)</strong> $(x-5)^2+(y+5)^2+(z-3)^2=59$
@@ -127,9 +145,8 @@ ponto $Q$?
 <li>Numa dada localidade, existe um clube onde se pratica badmínton e ténis. </br></br>
   Com doze raquetes distintas, sendo seis de badmínton e seis de ténis, formam-se, ao acaso, dois
 conjuntos de seis raquetes cada um.
-   </br> 
-Qual é o valor, arredondado às centésimas, da probabilidade de cada um dos dois conjuntos ficar
-com três raquetes de badmínton e três raquetes de ténis?
+   </br>  </br>
+Qual é o valor, arredondado às centésimas, da probabilidade de cada um dos dois conjuntos ficar com três raquetes de badmínton e três raquetes de ténis?
 </li>
 <p style="margin-left: 40px;">
   <strong>(A)</strong> $0,22$
@@ -147,7 +164,7 @@ Sabe-se que:
   <p style="margin-left: 40px;">$ \lim\limits_{x \rightarrow 2^+} g(x) = +\infty   $
 </p>   
 Seja $(v_n)$ a sucessão de termo geral $v_n=2-\frac{5}{n+3}$
-</br>
+</br> </br>
 A qual é igual $\lim g(v_n)$?
 </li>
 <p style="margin-left: 40px;">
@@ -171,19 +188,18 @@ A qual é igual $\lim g(v_n)$?
 </p>   
 
 <li>Na Figura 1, está representada, num referencial o.n. $Oxyz$, a pirâmide regular de base quadrada $[ABCD]$ e vértice E.
-  </br>  
+  </br>   </br>
 Sabe-se que:</br></li>
 
-•  a base da pirâmide está contida no plano $xOz$
-•  o vértice $A$ pertence ao semieixo positivo $Oz$ e o vértice $B$ pertence ao semieixo negativo $Ox$
-•  o vértice $E$ tem coordenadas $(−2,6,2)$
-•  o vetor BE tem coordenadas $(−1,6,2)$
-•  o volume da pirâmide é $20$
-</br>
+•  a base da pirâmide está contida no plano $xOz$ </br>
+•  o vértice $A$ pertence ao semieixo positivo $Oz$ e o vértice $B$ pertence ao semieixo negativo $Ox$  </br>
+•  o vértice $E$ tem coordenadas $(−2,6,2)$ </br>
+•  o vetor BE tem coordenadas $(−1,6,2)$ </br>
+•  o volume da pirâmide é $20$ </br> </br>
 <iframe src="https://www.geogebra.org/m/bd2h4rta" width="100%" height="300" style="border:none;">
-</iframe>
-</br> Seja $/alpha$ o plano perpendicular à reta $BE$ e que passa no ponto de coordenadas $(1,0,1)$
-Qual das equações seguintes é uma equação do plano $/alpha$ ?
+</iframe> </br>
+</br> Seja $\alpha$ o plano perpendicular à reta $BE$ e que passa no ponto de coordenadas $(1,0,1)$
+Qual das equações seguintes é uma equação do plano $\alpha$ ?
 
 <p style="margin-left: 40px;">
   <strong>(A)</strong> $-x+6y+2z=0$
@@ -192,21 +208,64 @@ Qual das equações seguintes é uma equação do plano $/alpha$ ?
   </br> <strong>(D)</strong> $2x-y+4+5=0$
 </p>   
 
-<li>Na Figura 3, está representada, a sombreado, num referencial o.n. $xOy$, a região do plano cartesiano definida pela condição $0 \leq x \leq 10 $ e $0 \leq y \leq 10 $ 
+<p style="margin-left: 30px;"><li>Na Figura 3, está representada, a sombreado, num referencial o.n. $xOy$, a região do plano cartesiano definida pela condição $0 \leq x \leq 10 $ e $0 \leq y \leq 10 $. </br> </br>
 Considere todos os pontos que pertencem a essa região e cujas coordenadas são números inteiros.  </br>
-Escolhe-se, ao acaso, um desses pontos.  </br>
-Qual é o valor, arredondado às milésimas, da probabilidade de esse ponto pertencer à reta de equação $y=x+7$ ? </br> </br>
-</li>
-<p style="margin-left: 40px;">
-  <strong>(A)</strong> $) 0,025}$ 
+Escolhe-se, ao acaso, um desses pontos.  </br> </br>
+Qual é o valor, arredondado às milésimas, da probabilidade de esse ponto pertencer à reta de equação $y=x+7$ ? </br> 
+ 
+   <div id="ggbApplet"></div>
+
+<script>
+var parameters = {
+"id": "ggbApplet",
+"width":1638,
+"height":842,
+"showMenuBar":true,
+"showAlgebraInput":true,
+"showToolBar":true,
+"customToolBar":"0 39 73 62 | 1 501 67 , 5 19 , 72 75 76 | 2 15 45 , 18 65 , 7 37 | 4 3 8 9 , 13 44 , 58 , 47 | 16 51 64 , 70 | 10 34 53 11 , 24  20 22 , 21 23 | 55 56 57 , 12 | 36 46 , 38 49  50 , 71  14  68 | 30 29 54 32 31 33 | 25 17 26 60 52 61 | 40 41 42 , 27 28 35 , 6",
+"showToolBarHelp":true,
+"showResetIcon":false,
+"enableLabelDrags":false,
+"enableShiftDragZoom":true,
+"enableRightClick":false,
+"errorDialogsActive":false,
+"useBrowserForJS":false,
+"allowStyleBar":false,
+"preventFocus":false,
+"showZoomButtons":true,
+"capturingThreshold":3,
+// add code here to run when the applet starts
+"appletOnLoad":function(api){ /* api.evalCommand('Segment((1,2),(3,4))');*/ },
+"showFullscreenButton":true,
+"scale":1,
+"disableAutoScale":false,
+"allowUpscale":false,
+"clickToLoad":false,
+"appName":"classic",
+"buttonRounding":0.7,
+"buttonShadows":false,
+"language":"pt",
+// use this instead of ggbBase64 to load a material from geogebra.org
+// "material_id":"RHYH3UQ8",
+// use this instead of ggbBase64 to load a .ggb file
+// "filename":"myfile.ggb",
+"ggbBase64":"UEsDBBQAAAAIAEZd01ThDXR+9AQAAIwlAAAXAAAAZ2VvZ2VicmFfZGVmYXVsdHMyZC54bWztml9vozgQwJ9vPwXi6e6hCZCQpFXpqrvS6Sp1u6trdbpXBxziq2Nz2DSkn37HNgGnSfqHpm22ah5ixtjG/s3YnsEcfy5n1LnBuSCcRa7f8VwHs5gnhKWRW8jJwcj9fPLpOMU8xeMcOROez5CM3FCVrOuB1Bn6PZWHsixyY4qEILHrZBRJVSVy+WRCCcOu45SCHDF+gWZYZCjGl/EUz9A5j5HUbU2lzI663fl83lk+tcPztAsNi24pkm6ayg6krgNdZyJyq4sjaHel9ryn6wWe53f//XZunnNAmJCIxdARGFaCJ6igUsAlpniGmXTkIsORm3HCpOtQNMY0cn8oyfl9kmP8h+tUlYCW5558+u1YTPnc4eP/cAx5Mi+g6aqeFrqqDNz+yinPnTxyARKwhf9x5AZhCMhoNkUqRxelaIFz5wZB/SoHFZLHurbOnSAqqmb1c77xBJs7/ao8I6AjgOkIiUEbvuuIDONEX5nxwQWoZqG1bLWnh31Jbqv2QjtXLmiVXXUr5jxPhFNG7gW6cJ1Fld6aFIocdyuoj8Ob4AyzBAqtMPZbMR6MNGSVAGWV7C3k3h5AHrx3yFV7dyHDDH4Byt+ZzTZoxdYPYGGAIen0Y6Gw6J6xv3EKfbYZ9z4Yv6AF99/bNqdhGYZC/YPDwmcZxeXrgjf+UAXxXAs19OD5voVyxl4fOTx1E3I1VgNPTkl8zbAAzy2wKqmLv0gCW5NqTNfB/7MVJRHQEYmJfDb4ScFiNYoa5tciv7Hp9/reW/Bv2nwV/DAnt+B3OHjmRAJTfzi6n6XAqZJqLpdLuTHldi7cuzJlXkiqGjpjEmImQAAPFms9vcY4u4LK39lVjphQgdNdw4DgJbdXoYpyNWFYtaqt33rGbMnR4j7thh/a3Zl2d7CmsRuU1+xtPbXzkbbu4h1Q/Bsr6wkLvA3i+e7ML26w7Y1o0G6yB15/M73OcI+N6AaGxxsM/1Ri4yR8uGibPGnYn7AgiO0gLqGL1JrDP5ZyrYGh0UCbjj85Vgx7Wm8hULxjw75nfn7/0PP9AQT8e2vSCulK1KGYmowGqnHXXgPqnk6F7fxiztRb7WXUYKSaXP9jQXggZsMkxcysq7AmeLoLC0igrVslqQOE0tfyAhK4e6sSyNbVYRw5KZ1TU+PUFDwNTNIzSd8kYcXrAV1msFpZzu2dFb7fLnL5ldaKl9DyztzhfTIXVsxwbk3+i6VcW0topj+MoVh9RSQoSUC9MwIAD8CFniHYDpUrPRacFhJOwOBgiTUnYMbE5iSRU+U7Qf8mpFSqNDemPCe3nMmalaMM9JTqo7KVlwhtQpmHF6ZtRrzdZO8aJzTx7KUYsZQ2E/HUSI0uzFt3XWj9nd39KoKOaA0NOsGo54/Cnjf0h4fhaPBIjfmj19HYEnseW4dJ1XjW1QhKewlFeqNhMBj0B0F4eDj0B/3h7mO3P+uMJg7Zx7dzWuVrRTdpFLaHNtEZ5XEhmhfGRqqZgNW9K+8DFSWhBOWL9SftMOKVuGwcgCstWOf7e4h0+1AAdNp07cxI1kG6GcyEADcGH19AYK8fQtgXFF+nOS9YZb1WD3Yz9Gpv2UePfsw5xRCsLof1ZSlbB7hr+/o2QCb/TecbfOQSX495ubIBPXAKJZoZcK4F62B1wwx4/CjX95yDNzeFdm7Rk44EN3odtgK61ndH3eVHTic/AVBLAwQUAAAACABGXdNUOYS/I2EDAAArEQAAFwAAAGdlb2dlYnJhX2RlZmF1bHRzM2QueG1s7VjNctMwED7DU2h0J/5PSacuk4EDzABTpheuqq0kAkdyJSWO+2q8A8/ESqu2TukP6WQYKOSQ1Y93V/vt55Xko1ebZUPWXBuhZEmTUUwJl5WqhZyXdGVnL17SV8fPj+ZczfmZZmSm9JLZkhbuySs96I0OksyNsbYtadUwY0RFSdsw61RKqmazRkhOCdkYcSjVR7bkpmUVP60WfMneq4pZb2thbXsYRV3XjS69jpSeR2DYRBtTR/O5HYGkBJYuTUlD4xDsbml3mddL4ziJPn94j35eCGkskxUsBMKq+YytGmugyRu+5NIS27ccAlBSVBn4aNgZb0r6TlqIlVduiaRa6TXoB+WSZkkR0+Pnz44qpXRtiNqUFJBQPYoLFB3AC5Dh3Brn1jjX4WCHg50fjJxBs1AdUWdfwHFJrV6B17Ag3/HPwPRr1ShNdEnToqAEEpekB5SceWusaRcMWqMkxl+ST+IkGScpqjes55qsGdgMTtnKqspb9KMz1pjgyvv+oGqOM3l4XgqghAPGWA7JhyhNy3ntWwgnrAOY0HtSDe0BIU5t33BiF6L6KrmBdKYDJdd4K+qaO26iDj+XqGLcf0lbpoFJVgPbcF7MuVwDYEobson9InoQYO3C9RxHN4nv9yBg9sIJGPbqEIkWGzJFjSk+OE1RZChyFEVA7CgK3PmJRWwjTPbmKmfT0B0QJ848cXbNM7gHJOF/O8dPLqMktDnE/P3b/WD7t7Ji2nIjmBy8u6/dxE3cx/867ncDCfYlH+B34vtb+EFNfRR+k4kHME1AAoReXhWoYl8wzpjbvoKJUWDZrQgFYO5iZqjnWJ2xOIeC/eCr36qmX/BaK3mN42DoGsosQPmYN2dX+JMi8/gXQKcbu0MedodiMo7zcb63XDyW0jshO9XVQix5zdk2tLDH3QktbJT7hDZNIB4IIMeN14mnge1JDxVYQDUY4noPZfeOK5aMCeKaPhnOnmhhltuoJr8R1TEWYkR1Ar2/EFXJ7VWcH117WFWL/1V1FyzPV6z2J64Q6qfL/hBTJOjOZIvz249No4O9AbKPc6dYto2ohP2le8Sttwg3iFeFHsUFiOBt14sFmY5RHKB4iWLy4MnDrPQMrtW3nYTD1HZS8z82qXs+Dg+V7j0OR4PPAtHlN4jjH1BLAwQUAAAACABGXdNU1je9uRkAAAAXAAAAFgAAAGdlb2dlYnJhX2phdmFzY3JpcHQuanNLK81LLsnMz1NIT0/yz/PMyyzR0FSorgUAUEsDBBQAAAAIAEZd01RnhIKmgAcAABscAAAMAAAAZ2VvZ2VicmEueG1s7VnbbttGGr5On2LAa0vi8KxASmGni90CaTeos4vF3o3IkTQ1RarkyJaKvlKfoi/W758ZUqLttJadFigaxNSc/vnPJzKzL/ebkt3KplV1Nff42PeYrPK6UNVq7u30cpR5X775YraS9UouGsGWdbMReu7FBNnfw2qc8pD2xHY79/JStK3KPbYthaYrc69eLktVSY+pAudLmWRZWox8niajKFwGI+FPp6N84Qd5niQiD1KPsX2rXlf1t2Ij263I5XW+lhvxrs6FNlTXWm9fTyZ3d3fjjr9x3awmYKGd7Ntislotxhg9BiGrdu65yWvgHdy+C829wPf55H/fvLN0RqpqtahysEwK2Kk3X7ya3amqqO/YnSr0GupKwsxja6lWa6gkiwKPTQhqC71sZa7VrWxx92RppNebrWfAREXnr+yMlb1gHivUrSpkM/f8MedRmkYnvx6rGyUr7YC5Izrp0M1ulbyzeGlmSMYcvOm6LheCkLKfGGexj4fxKbtgSYqdgPGYRdjJsJOykPZiHrGQEQgPWRRhjGibJzihY/zGsc84xwkLfBYELOAsCLGMYxYDLKW7AWCTqcHn4yFocIQnpL0wxGP2wghPQDMgii0a8BGHiZnF5jejO6ASg95PzBxhL5qCHG3EKWchOME69RnwAj04NtJEPqM/ziIiEqQsyJjBavD70NGtatWilHNvKcqWvLVaNvC/ft3qQymNEt3G0Wr8Av8AoX4EeOwjFqy34MT3L+hJ8ER0QAY7sU40tA1M4UM2MOhDTDNAgbQLi9HSJ8VgMEL4PpkFQ2xhICAtIaQZLIwxHYbwpRJ28oXnyIcg6eUDHHkOBnIKDCEjvjEB/zREbpnYpXE3H25jd8n4GOBL8KgXCgNlPEOYyJ8iBJ9OWDe7jyoxxfRIl2cXcTa9SEEYQfWAMGB7qhbpOdJ2NKfk5U+V9TQgzibZq5dn5ABiMfcu3/3zH1ffXT5kIIgfZ4C/0MY9C6TPjihomT/zPCAZnpUFHlj3GRSTQfz/2dR5AOt8Ch1H2ZNppth6JOPZEenBjH+OHWaTrlzOHEesXROs83ctN+gcUEimLA1ZYpKWKZ2omagZtn6mAUtjllLK6qooql7GEhpdKaVCmg1KaUyF9qSeJrSJmkUZjplSaAtrEHW1FXNTXanyDqsrymB0rIRgkFBxxlC/WUJJ05VEcBH0RTEA+6iBCUPhjAOWUGL+SH1EK1e3qtftWpZo85wVjBpVtd3pgeryDfU6ZqprQIvStGgOvqjzm6te2Q6TFC0aqSNaNDXH3sk2OYPW6tWsFAuJvnJ1TZ7A2K0oKYQMhWVdadZ5QUJ7s4lp42Zyl5eqUKL6L0zfdUzf7jYL2cDlMK1JSIOErrO+3+MpnLLr99JsamHyum6K60MLV2H7/8sGt4MkG6dJMk2m0yBMEx/6O9iTJAvHaTRNkoDHUcI5gq/NBfl4FI3TNOVRkARZFqQxrjx+EsWxJSxvr6XWkL5lYi/hplbbq4ZizGmRFl+3V3V53NrWqtJvxVbvGtPmI1E3JNJltSqlUaSxMbrg/GZR76+NBgOIQLg+HLZYjZx6Fqu3dVk3DBEYgCsGbGZErqfRwBBrPRSiDjD4BYSzE2Htz/kUGgaEGQFDo4GilwdrZCsqGLRyOixir1qTW4D71AuNg1BLvauUftcttMpvjpISvDV/p8MhSgfyYpSzyT3Pm7mY6PxwUxfS+nBo4QfnsxvZVLK0LlfB7rt611pwa1nD9a6V74VeX1bFd3KFeH0vKGVqMGJBj/IVMlcbXLT7Ts+CnOA/EMzuFnLVyE4flhlrBccla7eNFEW7lhIh4WxhA+IIZrZnk479GXqBUppisFHIJyOYeiP2pt1AECFVGO+atXmjtuTebIHEfiOPHlyollD0GwQNlbSQDamhrmAMTYa4RkR++OVnvStrvJnu9LqGi+G60DjEOxgubTaiKlhlqsrXFakJ2cW8ntmMJvy5t7+EJwABn3sHMzVS1jvdAVxaAR02yjCl3OAVjWkTLSbger+5NNjJQVi9+B7UjkXVApwYEwB9aCRIFYgMGhAYNIhyuxa91ktxoPx1kgENvm96n3K7hhsK6hNP63bv2cyZsmUwDuLqYH5/7OwzcVI+0ON7I+9Qh48r7uocxV09U3E8sJnJjC4zPVN3okLEGA/rHBUBIMkRMbM8Y4KvHgeTWU8Yuqd1lxufqHX+EbX/lrbePlNbpxn6r6Qp0tFvqOr3PdRG+X0P/eocD/3qb+ihTu9PVHt5WNXVPcXjfZBS6xWGgPyWidDpfWCJH8A3waGDJLiFhcNHRhGhTv2emSzhzg7ANWwq9BrlG9/PUK3pS5m5RC8pmPxLFYU0ba/tCE+tO2gInhBQ9IHUmXXs8D3NsB+P+lauaNVzIR764Au4PNP5dntVKtEcHnQlz9E0bF+Sl/ZlGV79sN+5kXJLTem/qw+NqFr62ny/0cF33ObUhwu5FLtSuya6Om1VBkdHJx8NvPxMiyw+W+TTW2SQ7WGeM22Sf7bJp7fJIEjOt0nx2SZ/VJyY/PVY5kLFPL42mS8k7n/S3vwKUEsBAhQAFAAAAAgARl3TVOENdH70BAAAjCUAABcAAAAAAAAAAAAAAAAAAAAAAGdlb2dlYnJhX2RlZmF1bHRzMmQueG1sUEsBAhQAFAAAAAgARl3TVDmEvyNhAwAAKxEAABcAAAAAAAAAAAAAAAAAKQUAAGdlb2dlYnJhX2RlZmF1bHRzM2QueG1sUEsBAhQAFAAAAAgARl3TVNY3vbkZAAAAFwAAABYAAAAAAAAAAAAAAAAAvwgAAGdlb2dlYnJhX2phdmFzY3JpcHQuanNQSwECFAAUAAAACABGXdNUZ4SCpoAHAAAbHAAADAAAAAAAAAAAAAAAAAAMCQAAZ2VvZ2VicmEueG1sUEsFBgAAAAAEAAQACAEAALYQAAAAAA==",
+};
+// is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator DA=Data Analysis, FI=Function Inspector, macro=Macros
+var views = {'is3D': 0,'AV': 1,'SV': 0,'CV': 0,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
+var applet = new GGBApplet(parameters, '5.0', views);
+window.onload = function() {applet.inject('ggbApplet')};
+applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
+</script>
+      
+   </p><p style="margin-left: 40px;">
+<strong>(A)</strong> $0,025$ 
   </br> <strong>(B)</strong> $0,033$
   </br> <strong>(C)</strong> $0,041$
   </br> <strong>(D)</strong> $0,057$
-</p>   
+</p>   </li></ol></span></p>
 
-</ol>
-</span>
-
-
-</body>
+  </body>
 </html>
+
